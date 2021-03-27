@@ -21,10 +21,12 @@ gem 'webpacker', '~> 5.0'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'prettier'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
+  gem 'faker'
   gem 'rspec-rails', '~> 4.0.0'
   gem 'rubocop'
   gem 'rubocop-performance'
@@ -42,6 +44,7 @@ end
 group :test do
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
+  gem 'shoulda-matchers', '~> 4.0'
   gem 'webdrivers'
 end
 

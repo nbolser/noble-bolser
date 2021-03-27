@@ -11,6 +11,7 @@
 ## Uses
 
 - Rails 6
+- Bootstrap p
 - RSpec
 - Rubocop
 
