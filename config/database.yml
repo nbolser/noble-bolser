@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: nb_wedding_development
+  database: noble_bolser_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: nb_wedding
+  #username: noble_bolser
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: nb_wedding_test
+  database: noble_bolser_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: nb_wedding_production
-  username: nb_wedding
-  password: <%= ENV['NB_WEDDING_DATABASE_PASSWORD'] %>
+  database: noble_bolser_production
+  username: noble_bolser
+  password: <%= ENV['noble_bolser_DATABASE_PASSWORD'] %>
