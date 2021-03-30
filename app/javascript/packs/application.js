@@ -9,14 +9,13 @@ import * as ActiveStorage from "@rails/activestorage";
 import "channels";
 
 require("bootstrap");
+require("../packs/flash");
 
 import "../stylesheets/application";
 
 document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="tooltip"]').tooltip();
 });
-
-
 
 Rails.start();
 Turbolinks.start();

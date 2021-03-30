@@ -20,6 +20,9 @@ Metrics/BlockLength:
     - config/**/*
     - spec/**/*
 
+Metrics/MethodLength:
+  Max: 12
+
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*

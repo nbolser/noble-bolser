@@ -7,6 +7,8 @@ Rails
     devise_for :admin_users, ActiveAdmin::Devise.config
     ActiveAdmin.routes(self)
 
+    get 'confirm', to: 'guests#confirm'
+
     resources :guests
 
     root 'welcome#index'
